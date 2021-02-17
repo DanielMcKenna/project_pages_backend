@@ -27,7 +27,7 @@ class ProjectFoldersController < ApplicationController
   end
 
   def destroy
-    @project.destroy
+    @projectFolder.destroy
   end
 
   private
@@ -37,6 +37,6 @@ class ProjectFoldersController < ApplicationController
   end
 
   def project_folder_params
-    params.require(:project).permit(:name, :image, :description, :project_link, :git_hub, :video, )
+    params.require(:project_folder).permit(:name, :number_of_proj, )
   end
 end
