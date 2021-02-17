@@ -20,4 +20,22 @@ user.image = "image of me looking good"
 user.twitter = "sorry I forgot you"
 user.save!
 
+project_folder = ProjectFolder.new
+project_folder.name = "React on Rails"
+project_folder.number_of_proj = 1
+project_folder.user_id = 1
+project_folder.save!
+
+
+project = Project.new
+project.name = "Project Pages"
+project.image = "home page image"
+project.description = "I wanted to create a project page then thought hey everyone needs one"
+project.project_link = "projectpages.com"
+project.git_hub = "here I am"
+project.video = "video of site"
+project.project_folder_id = 1
+project.save!
+
+
 puts "user created"

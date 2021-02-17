@@ -1,5 +1,5 @@
 class ProjectFolder < ApplicationRecord
   belongs_to :user
   has_many :projects
-  validates :name, presense: true
+  validates :name, presence: true
 end
