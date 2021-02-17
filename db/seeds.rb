@@ -17,7 +17,7 @@ user.linked_in = "me"
 user.git_hub = "git.Git"
 user.instagram = "dang I look good"
 user.image = "image of me looking good"
-user.username = "suckit"
+user.twitter = "sorry I forgot you"
 user.save!
 
 puts "user created"

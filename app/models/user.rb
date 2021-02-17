@@ -3,5 +3,5 @@ class User < ApplicationRecord
   has_many :project_folders
   has_many :project_comments
   validates :first_name, :last_name, :email, presence: true
-  validates :username, :email, uniqueness: true
+  validates :email, uniqueness: true
 end
