@@ -23,7 +23,7 @@ class ProjectsController < ApplicationController
   end
 
   def update
-    @user.update(project_params)
+    @project.update(project_params)
   end
 
   def destroy
@@ -33,7 +33,7 @@ class ProjectsController < ApplicationController
   private
 
   def set_project
-    @uproject= Project.find_by_id(params[:id])
+    @project= Project.find_by_id(params[:id])
   end
 
   def project_params
