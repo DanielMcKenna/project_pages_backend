@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 2021_02_16_032605) do
 
   create_table "project_folders", force: :cascade do |t|
     t.string "name"
-    t.integer "number_of_proj"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

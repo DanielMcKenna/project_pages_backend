@@ -37,6 +37,6 @@ class ProjectFoldersController < ApplicationController
   end
 
   def project_folder_params
-    params.require(:project_folder).permit(:name, :number_of_proj, )
+    params.require(:project_folder).permit(:name, )
   end
 end
