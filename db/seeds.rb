@@ -60,3 +60,4 @@ create_projects()
 seed_project_count()
 
 puts "user created"
+puts "this is a test"
