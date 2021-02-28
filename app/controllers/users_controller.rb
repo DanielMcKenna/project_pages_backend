@@ -1,6 +1,8 @@
+require 'pry'
 class UsersController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :set_user, only: [:show, :update, :edit, :destroy]
-
+ 
   def index
     @users = User.all
     render json: @users
@@ -12,7 +14,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-
+    binding.pry
     if @user
       @user.save
     end
